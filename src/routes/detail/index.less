@@ -1,0 +1,98 @@
+
+
+@font-face {
+  font-family: "微软雅黑";
+  src: url("../../public/微软雅黑.woff") format("woff"),
+  url("../../public/微软雅黑.ttf") format("truetype"),
+  url("../../public/微软雅黑.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "方正准圆简体";
+  src: url("../../public/方正准圆简体.woff2") format("woff2"),
+  url("../../public/方正准圆简体.woff") format("woff"),
+  url("../../public/方正准圆简体.ttf") format("truetype"),
+  url("../../public/方正准圆简体.eot") format("embedded-opentype"),
+  url("../../public/方正准圆简体.svg") format("svg"),
+  url("../../public/方正准圆简体.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 12.8rem;
+  height: 7.2rem;
+  .name{
+    position: absolute;
+    left:3.38rem;
+    top:.66rem;
+    line-height: .35rem;
+    font-size: .35rem;
+    font-family: 方正准圆简体;
+    color: #ffffff;
+  }
+  .tag{
+    position: absolute;
+    left:3.38rem;
+    top:1.21rem;
+    line-height: .2rem;
+    font-size: .2rem;
+    font-family: 方正准圆简体;
+    color: #ffffff;
+  }
+  .summary{
+    position: absolute;
+    left:3.38rem;
+    top:1.62rem;
+    //line-height: .2rem;
+    font-size: .2rem;
+    font-family: 方正准圆简体;
+    color: rgba(255,255,255,.7);
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: 8.62rem;
+  }
+  .coverImg{
+    position:absolute;
+    left:.8rem;
+    top:.67rem;
+    width:2.04rem;
+    height:3.06rem;
+    border-radius: .08rem;
+  }
+  .line {
+    position: absolute;
+    width: 11.2rem;
+    height: .02rem;
+    left: .8rem;
+    top: 3.96rem;
+  }
+  .bofang{
+    position: absolute;
+    width:.66rem;
+    height:.6rem;
+    left:3.39rem;
+    top:2.78rem;
+  }
+  .shoucang{
+    position: absolute;
+    width:.66rem;
+    height:.6rem;
+    left:4.32rem;
+    top:2.78rem;
+  }
+  .dinggou{
+    position: absolute;
+    width:.66rem;
+    height:.6rem;
+    left:5.25rem;
+    top:2.78rem;
+  }
+}

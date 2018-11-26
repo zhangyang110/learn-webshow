@@ -1,0 +1,80 @@
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.68rem;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+
+}
+
+.controlBtn {
+  width: .55rem;
+  height: .55rem;
+  position: absolute;
+  left: .5rem;
+  bottom: .14rem;
+
+}
+
+.playT {
+  font-family: 微软雅黑;
+  font-size: .2rem;
+  color: white;
+  position: absolute;
+  left: 1.47rem;
+  bottom: .28rem;
+}
+
+.remainT {
+  font-family: 微软雅黑;
+  font-size: .2rem;
+  color: white;
+  position: absolute;
+  right: .5rem;
+  bottom: .28rem;
+}
+
+.progressC {
+  width: 8.78rem;
+  border-radius: 0.02rem;
+  left: 2.49rem;
+  bottom: .31rem;
+  height: 0.04rem;
+  position: absolute;
+  background-color: #6b716f;
+}
+
+.loaded {
+  width: 50%;;
+  height: 100%;
+  background-color: #b7bcbb;
+  transition: all linear .3s;
+  border-radius: .02rem;
+
+}
+
+.played {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f8543b;
+  transition: width linear .3s;
+  border-radius: .02rem;
+
+}
+
+.played::after {
+  width: .03rem;
+  //width: 3px;
+  height: .12rem;
+  background-color: white;
+  content: ' ';
+  //display: block;
+  position: absolute;
+  right: 0;
+  top:-.04rem;
+}
+

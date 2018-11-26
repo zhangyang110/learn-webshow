@@ -1,0 +1,30 @@
+
+.container {
+  width: 12.8rem;
+  height: 7.2rem;
+  //line-height: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgcontainer {
+  width: .65rem;
+  height: .65rem;
+  margin: 0 auto;
+  animation: rotate 1s linear infinite;
+  img {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}

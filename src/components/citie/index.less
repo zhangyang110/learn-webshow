@@ -1,0 +1,86 @@
+.magnet {
+  position: absolute;
+  width: 1.6rem;
+  height: 2.4rem;
+  border-radius: .08rem;
+
+}
+
+.name {
+  position: absolute;
+  left: 0;
+  bottom: -.31rem;
+  overflow: hidden;
+  height: .20rem;
+  width: 1.6rem;
+  color: #ffffff;
+}
+
+.loopText {
+  position: absolute;
+  font-family: 方正准圆简体;
+  font-size: .19rem;
+  line-height: .21rem;
+  height: .21rem;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.loopTextAnimate {
+  position: absolute;
+  font-family: 方正准圆简体;
+  font-size: .19rem;
+  line-height: .21rem;
+  height: .21rem;
+  white-space: nowrap;
+  left: 100%;
+  top: 0;
+  z-index: 2;
+  animation: todayScroll 5s linear infinite;
+  -webkit-animation: todayScroll 5s linear infinite;
+  .todayScroll {
+    margin-right: 3em;
+  }
+}
+
+.Calculation {
+  font-size: .19rem;
+  position: absolute;
+  line-height: .21rem;
+  height: .21rem;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 3;
+}
+.focusImg{
+  position: absolute;
+  width: 1.86rem;
+  height:2.66rem;
+  left: -.13rem;
+  top: -.13rem;
+}
+
+@keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@-webkit-keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

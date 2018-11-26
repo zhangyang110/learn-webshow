@@ -1,0 +1,36 @@
+//@import '../../../../node_modules/video.js/dist/video-js.min.css';
+:global {
+  .vjs-loading-spinner {
+    display: none !important;
+  }
+  .vjs-big-play-button {
+    display: none !important;
+  }
+
+  .vjs-control-bar {
+    display: none !important;
+
+  }
+  .vjs-modal-dialog .vjs-hidden .vjs-text-track-settings {
+    display: none !important;
+
+  }
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+
+  video {
+    //width: 100%;
+    object-fit: fill;
+  }
+}
+
+.video :first-child {
+  width: 100%;
+  height: 100%;
+}
+
+

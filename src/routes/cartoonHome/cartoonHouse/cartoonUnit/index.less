@@ -1,0 +1,86 @@
+.contentImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.text {
+  font-family: 方正准圆简体;
+  color: #ffffff;
+  font-size: .24rem;
+  text-align: center;
+  position: absolute;
+  left: .25rem;
+  top: 1.40rem;
+  width: 1.43rem;
+  line-height: .26rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.scrollContainer {
+  color: #ffffff;
+  font-size: .24rem;
+  position: absolute;
+  left: .25rem;
+  top: 1.40rem;
+  width: 1.43rem;
+  //line-height: .26rem;
+  height: .24rem;
+  overflow: hidden;
+  .Animate {
+    color: #ffffff;
+    font-size: .24rem;
+    position: absolute;
+    line-height: .26rem;
+    font-family: 方正准圆简体;
+    white-space: nowrap;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+    animation: todayScroll 4s linear infinite;
+    -webkit-animation: todayScroll 4s linear infinite;
+    .todayScroll {
+      margin-right: 3em;
+    }
+  }
+}
+.opacity{
+  font-size: .24rem;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+}
+.focusedImg{
+  position: absolute;
+  //width: 100%;
+  //height:100%;
+  width:2.26rem;
+  height:2.53rem;
+  left:-.18rem;
+  top:-.18rem;
+}
+.focusNone{
+  display: none;
+}
+
+@keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@-webkit-keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

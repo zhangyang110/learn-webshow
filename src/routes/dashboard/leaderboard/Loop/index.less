@@ -1,0 +1,49 @@
+.textContainer {
+  width: 2.6rem;
+  overflow: hidden;
+  position: absolute;
+  font-size: 0.2rem;
+  font-family: 方正准圆简体;
+  line-height: 0.22rem;
+  height: 0.22rem;
+  color: #ffffff;
+  .getWidth{
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 0;
+    white-space: nowrap;
+  }
+  .Animate{
+    position: absolute;
+    left: 100%;
+    top:0;
+    z-index: 2;
+    white-space: nowrap;
+
+    animation: todayScroll 4s linear infinite;
+    -webkit-animation: todayScroll 4s linear infinite;
+    .todayScroll {
+      margin-right: 3em;
+    }
+  }
+}
+@keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@-webkit-keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "微软雅黑";
+  src: url("../../../public/微软雅黑.woff") format("woff"),
+  url("../../../public/微软雅黑.ttf") format("truetype"),
+  url("../../../public/微软雅黑.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "方正准圆简体";
+  src: url("../../../public/方正准圆简体.woff2") format("woff2"),
+  url("../../../public/方正准圆简体.woff") format("woff"),
+  url("../../../public/方正准圆简体.ttf") format("truetype"),
+  url("../../../public/方正准圆简体.eot") format("embedded-opentype"),
+  url("../../../public/方正准圆简体.svg") format("svg"),
+  url("../../../public/方正准圆简体.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contentContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+}
+
+.contentImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.text {
+  font-family: 方正准圆简体;
+  color: #ffffff;
+  font-size: .24rem;
+  text-align: center;
+  position: absolute;
+  left: .25rem;
+  top: 1.40rem;
+  width: 1.43rem;
+  line-height: .26rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.scrollContainer {
+  color: #ffffff;
+  font-size: .24rem;
+  position: absolute;
+  left: .25rem;
+  top: 1.40rem;
+  width: 1.43rem;
+  //line-height: .26rem;
+  height: .24rem;
+  overflow: hidden;
+  .Animate {
+    color: #ffffff;
+    font-size: .24rem;
+    position: absolute;
+    line-height: .26rem;
+    font-family: 方正准圆简体;
+    white-space: nowrap;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+    animation: todayScroll 4s linear infinite;
+    -webkit-animation: todayScroll 4s linear infinite;
+    .todayScroll {
+      margin-right: 3em;
+    }
+  }
+}
+
+@keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@-webkit-keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

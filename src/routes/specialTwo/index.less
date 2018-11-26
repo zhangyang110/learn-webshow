@@ -1,0 +1,110 @@
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -160px 0 0 -160px;
+    width: 320px;
+    height: 320px;
+    padding: 36px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .08);
+}
+
+.container {
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 12.8rem;
+    height: 7.2rem;
+}
+
+.contentContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.text {
+    font-family: Microsoft YaHei;
+    color: #ffffff;
+    font-size: .19rem;
+    text-align: center;
+    overflow: hidden; // text-overflow: ellipsis;
+    white-space: nowrap; // margin:0;
+    animation: mymove 5s infinite; // padding: .12rem;
+    // bottom:.56rem;
+    // position: absolute;
+    // left: 0;
+    // right:0;
+    line-height: .19rem;
+}
+
+.pageUpAndDown {
+    font-family: Microsoft YaHei;
+    color: #ffffff;
+    font-size: .19rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: .19rem;
+}
+
+.titleText {
+    font-family: Microsoft YaHei;
+    color: #ffffff;
+    font-size: .24rem;
+    position: absolute; // text-align: center;
+    // line-height: .19rem;
+}
+
+.animText {
+    position: absolute;
+    font-family: Microsoft YaHei;
+    color: #ffffff;
+    font-size: .19rem;
+    line-height: .19rem;
+    white-space: nowrap; 
+    left: 100%;
+    animation: todayScroll 4s linear infinite;
+    -webkit-animation: todayScroll 4s linear infinite;
+    .todayScroll {
+        margin-right: 3em;
+    }
+}
+
+.addNameAnimate {
+    position: absolute;
+    height: .23rem;
+    line-height: .23rem;
+    font-family: 方正准圆简体;
+    white-space: nowrap;
+    left: 100%;
+    top: .33rem;
+    animation: todayScroll 4s linear infinite;
+    -webkit-animation: todayScroll 4s linear infinite;
+    .todayScroll {
+        margin-right: 3em;
+    }
+}
+
+
+@keyframes todayScroll {
+    0% {
+        transform: translate(-50%);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+@-webkit-keyframes todayScroll {
+    0% {
+        transform: translate(-50%);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}

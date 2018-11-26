@@ -1,0 +1,152 @@
+.resultContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  .totalText {
+    text-align: left;
+    position: absolute;
+    left: 4.96rem;
+    top: .45rem;
+    font-family: 微软雅黑;
+    font-size: .24rem;
+    color: #ffffff;
+    line-height: .24rem;
+  }
+  .totalText {
+    text-align: left;
+    position: absolute;
+    left: 4.96rem;
+    top: .45rem;
+    font-family: 微软雅黑;
+    font-size: .24rem;
+    color: #ffffff;
+    line-height: .24rem;
+  }
+  .last {
+    text-align: left;
+    position: absolute;
+    left: 10.06rem;
+    top: 6.81rem;
+    font-family: 微软雅黑;
+    font-size: .19rem;
+    color: #ffffff;
+    line-height: .19rem;
+  }
+  .page {
+    text-align: left;
+    position: absolute;
+    left: 10.89rem;
+    top: 6.82rem;
+    font-family: 微软雅黑;
+    font-size: .19rem;
+    color: #ffffff;
+    line-height: .19rem;
+  }
+  .next {
+    text-align: left;
+    position: absolute;
+    left: 11.45rem;
+    top: 6.82rem;
+    font-family: 微软雅黑;
+    font-size: .19rem;
+    color: #ffffff;
+    line-height: .19rem;
+  }
+  .magnet {
+    position: absolute;
+    width: 1.6rem;
+    height: 2.4rem;
+    border-radius: .08rem;
+    img {
+      //position: absolute;
+      //left: 0;
+      //top: 0;
+      //right: 0;
+      //bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+    //p {
+    //  position: absolute;
+    //  width: 1.6rem;
+    //  font-size: .19rem;
+    //  font-family: 方正准圆简体;
+    //  color: #ffffff;
+    //  line-height: .23rem;
+    //  height:.19rem;
+    //  bottom: -.31rem;
+    //  left: 0;
+    //  text-align: center;
+    //  overflow : hidden;
+    //  text-overflow: ellipsis;
+    //  display: -webkit-box;
+    //  -webkit-line-clamp: 1;
+    //  -webkit-box-orient: vertical;
+    //}
+
+    .name {
+      position: absolute;
+      left: 0;
+      bottom: -.31rem;
+      overflow: hidden;
+      height: .20rem;
+      width: 1.6rem;
+      line-height: .20rem;
+      color: #ffffff;
+      font-size: .19rem;
+      .loopText {
+        position: absolute;
+        font-family: 方正准圆简体;
+        font-size: .19rem;
+        line-height: .20rem;
+        height: .20rem;
+        white-space: nowrap;
+        left: 0;
+        top: 0;
+        text-align: center;
+        overflow : hidden;
+        width: 1.6rem;
+      }
+      .loopTextAnimate {
+        position: absolute;
+        font-family: 方正准圆简体;
+        font-size: .19rem;
+        line-height: .20rem;
+        height: .20rem;
+        white-space: nowrap;
+        left: 100%;
+        top: 0;
+        z-index: 2;
+        animation: todayScroll 5s linear infinite ;
+        -webkit-animation: todayScroll 5s linear infinite;
+        .todayScroll {
+          margin-right: 3em;
+        }
+      }
+    }
+  }
+
+}
+
+
+@keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@-webkit-keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "微软雅黑";
+  src: url("../../../public/微软雅黑.woff") format("woff"),
+  url("../../../public/微软雅黑.ttf") format("truetype"),
+  url("../../../public/微软雅黑.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "方正准圆简体";
+  src: url("../../../public/方正准圆简体.woff2") format("woff2"),
+  url("../../../public/方正准圆简体.woff") format("woff"),
+  url("../../../public/方正准圆简体.ttf") format("truetype"),
+    //url("../../../public/方正准圆简体.eot") format("embedded-opentype"),
+  url("../../../public/方正准圆简体.svg") format("svg"),
+  url("../../../public/方正准圆简体.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contentContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .playMost {
+    position: absolute;
+    left: 2.28rem;
+    //top: 1.76rem;
+    top: 1.79rem;
+    font-family: 方正准圆简体;
+    color: #FFFFFF;
+    font-size: .24rem;
+    line-height: 1;
+    z-index: 1;
+  }
+  .cartoonText {
+    position: absolute;
+    left: 6.34rem;
+    //top: 1.76rem;
+    top: 1.79rem;
+    font-family: 方正准圆简体;
+    color: #FFFFFF;
+    font-size: .24rem;
+    line-height: .24rem;
+    z-index: 1;
+  }
+  .eduText {
+    position: absolute;
+    left: 10.15rem;
+    //top: 1.76rem;
+    top: 1.79rem;
+    font-family: 方正准圆简体;
+    color: #FFFFFF;
+    font-size: .24rem;
+    line-height: .24rem;
+    z-index: 1;
+  }
+}
+
+.play {
+  position: absolute;
+  left: .8rem;
+  top: 1.62rem;
+  width: 3.6rem;
+  height: 4.78rem;
+}
+
+.cartoon {
+  position: absolute;
+  left: 4.6rem;
+  top: 1.62rem;
+  width: 3.6rem;
+  height: 4.78rem;
+}
+
+.childEdu {
+  position: absolute;
+  left: 8.4rem;
+  top: 1.62rem;
+  width: 3.6rem;
+  height: 4.78rem;
+}
+
+.text {
+  position: absolute;
+  font-size: 0.23rem;
+  font-family: 方正准圆简体;
+  line-height: 0.23rem;
+}
+
+
+.contentText {
+  position: absolute;
+  font-size: 0.2rem;
+  font-family: 方正准圆简体;
+  line-height: 0.2rem;
+  color: #ffffff;
+}
+
+@keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@-webkit-keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

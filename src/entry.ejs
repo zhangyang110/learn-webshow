@@ -1,0 +1,43 @@
+<% htmlWebpackPlugin.options.headScripts = htmlWebpackPlugin.options.headScripts || [] %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="tv editor">
+  <title>WebShow</title>
+  <!--[if lte IE 10]>
+  <script
+    src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+  <![endif]-->
+  <% for (item of htmlWebpackPlugin.options.headScripts) { %>
+  <script src="<%= item %>"></script>
+  <% } %>
+  <script>
+    function refreshRem() {
+      var desW = 1280;
+      var winW = document.documentElement.clientWidth;
+      var ratio = winW / desW;
+      document.documentElement.style.fontSize = ratio * 100 + 'px';
+    }
+
+    refreshRem();
+    window.addEventListener('resize', refreshRem);
+  </script>
+  <script>
+    var globalOpts = {
+      channel: "chongqing",
+      app: "教育",
+      version: "3.0.3d9bd83",
+      platform: "other"
+    }
+  </script>
+
+</head>
+<body style="background-color:#251351">
+<div id="root"></div>
+</body>
+
+</html>

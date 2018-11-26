@@ -1,0 +1,47 @@
+const APIV1 = '/api/v1'
+const APIV2 = '/api/v2'
+const APIV3 = '/api/v3'
+
+module.exports = {
+  name: 'TV Editor',
+  prefix: 'tvEditor',
+  footerText: 'TV Editor  © 2017 BabelTime',
+  logo: '/logo.png',
+  iconFontCSS: '/iconfont.css',
+  iconFontJS: '/iconfont.js',
+  CORS: [],
+  openPages: ['/login'],
+  // apiPrefix: '/api/v2',
+  apiPrefix: '/api/v3',
+  // resPrefix: '/res/v2/images',
+  resPrefix: '/res/v3/images',
+  APIV1,
+  APIV2,
+  APIV3,
+  // api: {
+  //   userLogin: `${APIV2}/login`,
+  //   userLogout: `${APIV2}/logout`,
+  //   userInfo: `${APIV2}/userInfo`,
+  //   users: `${APIV2}/users`,
+  //   posts: `${APIV2}/posts`,
+  //   user: `${APIV2}/user/:id`,
+  //   dashboard: `${APIV2}/dashboard`,
+  //   menus: `${APIV2}/menus`,
+  //   weather: `${APIV2}/weather`,
+  //   v1test: `${APIV2}/test`,
+  //   v2test: `${APIV2}/test`,
+  // },
+  api: {
+    userLogin: `${APIV3}/login`,
+    userLogout: `${APIV3}/logout`,
+    userInfo: `${APIV3}/userInfo`,
+    users: `${APIV3}/users`,
+    posts: `${APIV3}/posts`,
+    user: `${APIV3}/user/:id`,
+    dashboard: `${APIV3}/dashboard`,
+    menus: `${APIV3}/menus`,
+    weather: `${APIV3}/weather`,
+    v1test: `${APIV3}/test`,
+    v2test: `${APIV3}/test`,
+  },
+}

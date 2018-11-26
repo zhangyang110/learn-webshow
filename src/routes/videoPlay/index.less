@@ -1,0 +1,120 @@
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -160px 0 0 -160px;
+    width: 320px;
+    height: 320px;
+    padding: 36px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .08);
+}
+
+.container {
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 12.8rem;
+    height: 7.2rem;
+    video {
+        object-fit: fill;
+    }
+}
+
+.contentContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.loading {
+    text-align: center;
+    font-size: .2rem;
+    color: white;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.topDiv {
+    width: 100%;
+    height: 0.54rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(black, rgba(255, 0, 0, 0));
+}
+
+.titleText {
+    font-family: Microsoft YaHei;
+    color: #ffffff;
+    font-size: .24rem;
+    position: absolute;
+    top: 0.15rem;
+    left: 0.45rem;
+}
+
+.controlsDiv {
+    width: 100%;
+    height: 1.68rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient( rgba(255, 0, 0, 0), black);
+    // visibility: hidden;
+}
+
+.btnPlay {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.14rem;
+}
+
+.timeText {
+    font-family: Microsoft YaHei;
+    font-size: .20rem;
+    position: absolute;
+    color: #ffffff;
+    bottom: 0.28rem;
+    line-height: .20rem;
+}
+
+.progressWrap {
+    width: 8.78rem;
+    height: 0.04rem;
+    position: absolute;
+    left: 2.45rem;
+    bottom: 0.3rem; // background-color: #f8543b;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.lineWrap {
+    width: 80%;
+    height: 100%; // position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lineInner {
+    width: 50%;
+    height: 110%;
+    background-color: #F8543B; 
+      position: relative;
+    .lineDot {
+        position: absolute;
+        top: -0.03rem;
+        width: 0.03rem;
+        height: 0.12rem;
+        display: inline-block;
+        background-color: white;
+        right: -0.03rem;
+        
+    }
+}
+

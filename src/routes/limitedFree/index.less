@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "微软雅黑";
+  src: url("../../public/方正准圆简体.woff2") format("woff2"),
+  url("../../public/微软雅黑.woff") format("woff"),
+  url("../../public/微软雅黑.ttf") format("truetype"),
+  url("../../public/微软雅黑.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 12.8rem;
+  height: 7.20rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .magnet {
+    border-radius: .08rem;
+    text-align: center;
+    .Calculation {
+      font-size: .19rem;
+      position: absolute;
+      white-space: nowrap;
+      opacity: 0;
+
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+    .scrollContainer {
+      color: #ffffff;
+      width: 1.52rem;
+      height: .22rem;
+      overflow: hidden;
+      margin: .19rem auto 0 auto;
+      position: relative;
+      font-family: 微软雅黑;
+
+      .Animate {
+        font-size: .19rem;
+        position: absolute;
+        height: .22rem;
+        line-height: .22rem;
+        white-space: nowrap;
+        left: 100%;
+        top: 0;
+        z-index: 1;
+        animation: todayScroll 4s linear infinite;
+        -webkit-animation: todayScroll 4s linear infinite;
+        .todayScroll {
+          margin-right: 3em;
+        }
+      }
+    }
+    .text {
+      font-family: 微软雅黑;
+      font-size: .19rem;
+      color: #FFFFFF;
+      white-space: nowrap;
+      margin: .16rem auto 0 auto;
+      text-align: center;
+      overflow: hidden;
+      width: 1.52rem;
+
+    }
+  }
+
+}
+
+
+
+@keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@-webkit-keyframes todayScroll {
+  0% {
+    transform: translate(-50%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
